@@ -5,3 +5,5 @@ set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES abstract_factory_model.cpp)
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+
+add_executable(Strategy strategy_model.cpp)
