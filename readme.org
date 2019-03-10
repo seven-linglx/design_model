@@ -2,6 +2,11 @@
 #+SETUP:indent
 #+SETUP:content
 #+OPTIONS:toc:t
+* Table of contents :TOC:
+- [[#简介indroduction][简介（Indroduction）]]
+- [[#编译与运行compilerun][编译与运行（Compile&Run)]]
+- [[#目录content][目录（Content）]]
+
 * 简介（Indroduction）
   这里是设计模式编程实践，使用C++实现
 * 编译与运行（Compile&Run)
