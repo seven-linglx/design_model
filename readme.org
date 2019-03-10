@@ -1,0 +1,16 @@
+#+TITLE:设计模式
+#+SETUP:indent
+* 简介（Indroduction）
+  这里是设计模式编程实践，使用C++实现
+* 编译与运行（Compile&Run)
+  #+BEGIN_SRC sh
+    mkdir build
+    cd build
+    cmake ..
+    make
+    ./[target algorithm]
+  #+END_SRC
+* 目录（Content）
+  - CMakeLists.txt cmake编译配置文件
+  - strategy_model.cpp 策略设计模式
+  - abstract_factory_model.cpp 抽象工厂设计模式
