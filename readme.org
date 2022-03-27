@@ -19,6 +19,6 @@
   #+END_SRC
 * 目录（Content）
   - CMakeLists.txt cmake编译配置文件
-  - strategy_model.cpp 策略设计模式
+  - strategy 策略设计模式
   - abstract_factory_model.cpp 抽象工厂设计模式
   - pimpl 桥接模式
