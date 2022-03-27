@@ -8,7 +8,7 @@
 - [[#目录content][目录（Content）]]
 
 * 简介（Indroduction）
-  这里是设计模式编程实践，使用C++实现
+  设计模式中运用了面向对象编程语言的重要特性：封装、继承、多态。这里是C++实现设计模式编程实践。
 * 编译与运行（Compile&Run)
   #+BEGIN_SRC sh
     mkdir build
@@ -21,3 +21,4 @@
   - CMakeLists.txt cmake编译配置文件
   - strategy_model.cpp 策略设计模式
   - abstract_factory_model.cpp 抽象工厂设计模式
+  - pimpl 桥接模式
