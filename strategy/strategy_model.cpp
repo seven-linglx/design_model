@@ -22,10 +22,24 @@ class Fast : public SortAlgorithm
   void sort() const { cout << "Fast" << endl;}
 };
 
+enum class SORT_ALG_TYPE : size_t { BUBBLE, FAST, COUNT_OF_ALG };
+
 class Context
 {
  public:
-  Context(){};
+  Context() = delete;
+  Context(const SORT_ALG_TYPE alg_type) {
+    switch (alg_type) {
+        case SORT_ALG_TYPE::BUBBLE:
+            p = std::make_shared<Bubble>();
+            break;
+        case SORT_ALG_TYPE::FAST:
+            p = std::make_shared<Fast>();
+            break;
+        default:
+            p = std::make_shared<Bubble>();
+    }
+  };
   Context(const std::shared_ptr<SortAlgorithm> &p) : p(p) {};
   void setAlgorithm(const std::shared_ptr<SortAlgorithm> &a){p = a;}
   void sort(){p->sort();}
@@ -35,7 +49,8 @@ class Context
 
 int main()
 {
-  auto intance = std::shared_ptr<Context>(new Context);
+  auto intance = std::make_shared<Context>(SORT_ALG_TYPE::FAST);
+  intance->sort();
   intance->setAlgorithm(std::shared_ptr<SortAlgorithm>(new Bubble));
   intance->sort();
   intance->setAlgorithm(std::shared_ptr<SortAlgorithm>(new Fast));
